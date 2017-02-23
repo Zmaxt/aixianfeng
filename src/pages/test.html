@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"> 
+    <style type="text/css"> 
+        
+    </style>
+<script type="text/javascript" src="../../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+   <ul>
+       <li v-for="i in arr">
+           {{ i }}
+       </li>
+   </ul>
+   <ul>
+       <li v-for="i in arr2">{{ i }}</li>
+   </ul>
+</div>
+<script type="text/javascript">
+var vm = new Vue({
+    el:"#app",
+    data:{
+        arr:[1,2,3],
+        arr2:["a","b","c"]
+    },
+    watch:{
+      
+    }
+});
+
+</script>
+
+</body>
+
+</html>
